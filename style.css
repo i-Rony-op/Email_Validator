@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Gabarito&display=swap");
+* {
+  font-family: "Gabarito", cursive;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.logo img {
+  width: 50px;
+}
+nav {
+  padding: 5px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: grey;
+  color: black;
+  display: flex;
+}
+ul {
+  display: flex;
+}
+ul li {
+  padding: 15px;
+  list-style-type: none;
+}
+ul li a {
+  color: black;
+  text-decoration: none;
+}
+ul > li > a:hover {
+  transition: all 0.5s;
+  color: white;
+}
+
+main {
+  padding: 15px;
+  min-height: 90vh;
+}
+.container h1 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.container form label {
+  margin-left: 39px;
+}
+
+.container form .btn {
+  background-color: rgba(0, 0, 255, 0.348);
+  padding: 9px 10px;
+  border: none;
+  border-radius: 15px;
+  width: 191px;
+}
+.container form {
+  margin: auto;
+}
+.container form .btn:hover {
+  transition: all 0.3s;
+  cursor: pointer;
+  background-color: white;
+}
+.container form input[type="text"] {
+  text-align: center;
+  margin: 9px 0;
+  width: 180px;
+  padding: 4px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 255, 0.348);
+  outline: none;
+}
+.container form input[type="text"]:focus {
+  width: 185px;
+  transition: all 0.3s;
+  background-color: white;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  border: 2.5px solid #ccc;
+  border-radius: 5px;
+  padding: 30px;
+  background-color: rgba(32, 178, 171, 0.322);
+  max-width: 80vw;
+  margin: auto;
+}
+
+#resultCont div:first-letter {
+  text-transform: uppercase;
+}
+#resultCont div {
+  padding: 4px;
+}
+footer span {
+  margin: auto;
+}
+footer {
+  font-size: 12px;
+  display: flex;
+  padding: 12px;
+  background-color: grey;
+  color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  .container {
+    font-size: 12px;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .logo {
+    padding: 6px 0;
+  }
+}

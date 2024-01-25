@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="/">
+            <img
+              src="email.png"
+              alt="
+            LOGO"
+            />
+          </a>
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1>Email Validator</h1>
+        <form action="/submit" method="post">
+          <label for="username">Enter Your Email</label>
+          <br />
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+            placeholder="Email Here"
+          />
+          <br />
+          <input id="submitBtn" type="submit" class="btn" value="Submit" />
+        </form>
+      </div>
+      <br />
+      <div class="container">
+        <h2 style="font-size: 30px">Results</h2>
+        <div id="resultCont"></div>
+      </div>
+    </main>
+    <footer>
+      <span> CopyRight | emailvalidator.com | All Rights Reserved | </span>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
